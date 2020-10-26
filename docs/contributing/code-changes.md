@@ -1,0 +1,2 @@
+### Code Changes
+Contributions are welcome and appreciated. If you want a code change or documentation, open a pull request [here](https://github.com/gadhagod/News-Archives/pulls). Merged pull requests are automatically deployed, and you'll become a contributer to the repository.

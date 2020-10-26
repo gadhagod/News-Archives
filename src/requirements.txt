@@ -1,0 +1,4 @@
+flask==1.1.2
+rockset==0.7.18b20200724
+BBCHeadlines==2
+gunicorn==20.0.4

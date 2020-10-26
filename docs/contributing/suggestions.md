@@ -1,0 +1,2 @@
+### Suggestions
+If you have a feature request or suggestion, open an issue [here](https://github.com/gadhagod/News-Archives/issues/new) and label it appropriately. Again, contributions are tremendously appreciated.
