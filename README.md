@@ -1,1 +1,1 @@
-[Documentation](http://gadhagod.github.io/News-Archives)
+[Documentation](https://gadhagod.github.io/News-Archives/)
