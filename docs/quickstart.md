@@ -8,7 +8,7 @@ On your command line, that would look like:
 
 This would retrieve you _all_ data stored since 2020-10-26. The response should be similar to this (articles were randomly picked from 2020-10-23):
 
-    {data:
+    {"data":
         [
             {
                 "date": "2020-10-23",
