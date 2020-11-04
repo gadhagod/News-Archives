@@ -32,7 +32,7 @@ def funcdate(day):
 
 @app.route('/month/<month>', methods=['GET'])
 def funcmonth(month):
-    res = list(rs.sql(Q(collection_name)))
+    res = list(rs.sql(Q(collection_name).where(F['_id'].like(month + '%'))))
     ls = []
     for i in res:
         target = i['_id']
@@ -48,7 +48,7 @@ def funcmonth(month):
 
 @app.route('/year/<year>')
 def funcyear(year):
-    res = list(rs.sql(Q(collection_name).select(F['*'])))
+    res = list(rs.sql(Q(collection_name).where(F['_id'].like(year + '%'))))
     ls = []
     for i in res:
         if year == i['_id'][:i['_id'].index('-')]:
@@ -81,3 +81,6 @@ def funckeyword(keyword):
     return({
         'data': ls
     })
+
+if os.environ.get('ENV') == 'dev':
+    app.run(host="localhost", port=8000, debug=True)
