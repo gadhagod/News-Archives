@@ -1,5 +1,5 @@
-from flask import Flask, request
-from rockset import Client, Q, F
+from flask import Flask, request, jsonify
+from rockset import Client, ParamDict, Q, F
 import os
 from datetime import date, datetime
 
@@ -66,21 +66,16 @@ def funcyear(year):
 
 @app.route('/keyword/<keyword>', methods=['GET'])
 def funckeyword(keyword):
-    lower_keyword = keyword.lower()
-    ls = []
-    res = rs.sql(Q(collection_name).select(F['*']))
-    for day in res:
-        for article in day['articles']:
-            if lower_keyword in article['title'].lower() or lower_keyword in article['description'].lower():
-                ls.append({
-                    'date': day['_id'],
-                    'title': article['title'],
-                    'description': article['description'],
-                    'link': article['link']
-                })
+    qlambda = rs.QueryLambda.retrieve(
+        'NewsKeywordSearch',
+        version='df3d671743c064d2',
+        workspace='commons'
+    )
+    params = ParamDict()
+    params['keyword'] = keyword
+    results = qlambda.execute(parameters=params).to_dict()['results']
+    for i in results:
+        i['date'] = i.pop('_id')
     return({
-        'data': ls
+        'data': results
     })
-
-if os.environ.get('ENV') == 'dev':
-    app.run(host="localhost", port=8000, debug=True)
