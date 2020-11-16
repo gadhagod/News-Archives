@@ -1,10 +1,10 @@
 ### Quckstart
 It's incredibly simple to start using this service. <br>Make the following request:
 
-    GET http://newsarchive.herokuapp.com/
+    GET http://newsarchive.herokuapp.com/day/2020-10-26
 On your command line, that would look like:
 
-    curl http://newsarchive.herokuapp.com/
+    curl http://newsarchive.herokuapp.com/day/2020-10-26
 
 This would retrieve you _all_ data stored since 2020-10-26. The response should be similar to this (articles were randomly picked from 2020-10-23):
 

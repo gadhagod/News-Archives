@@ -5,6 +5,6 @@ You can get all articles in a day by making the following request:
 
 ##### Sample Request
 
-    curl http://newsarchives.herokuapp.com/day/2020-10-26
+    curl http://newsarchives.herokuapp.com/day/2020-11-1
 
 You should get all data from October 26, 2020.

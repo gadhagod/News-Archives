@@ -5,6 +5,6 @@ You can get all articles in a month by making the following request:
 
 ##### Sample Request
 
-    curl http://newsarchives.herokuapp.com/month/2020-10
+    curl http://newsarchives.herokuapp.com/month/2020-11
 
 You should get all data from October 2020.

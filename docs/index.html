@@ -31,9 +31,18 @@
             return html + footer;
           });
         }
-      ]
+      ],
+      search: {
+        maxAge: 86400000,
+        paths: 'auto',
+        placeholder: 'Search Docs',
+        noData: 'No Results!',
+        depth: 10,
+        hideOtherSidebarContent: false,
+      }
     }
   </script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
 </body>
 </html>
