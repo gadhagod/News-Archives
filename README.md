@@ -9,7 +9,6 @@
     <a href="https://rubygems.org/gems/newsarchives">
         <img src="https://img.shields.io/gem/v/newsarchives">
     </a>
-    
 </center>
 <p>Get news from any day since 2020-10-29</p>
 
@@ -33,3 +32,5 @@ specified keyword.
 <a href="http://gadhagod.github.io/News-Archives/#/client-libraries/ruby/">Ruby</a><br>
 <a href="http://gadhagod.github.io/News-Archives/#/client-libraries/cli/">CLI</a><br>
 </p>
+
+<a href="https://gadhagod.github.io/News-Archives"><h3>Documentation</h3></a>
