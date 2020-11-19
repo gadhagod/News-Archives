@@ -4,13 +4,3 @@ updates:
     directory: "/src"
     schedule:
       interval: "daily"
-
-  - package-ecosystem: "pip"
-    directory: "/packages/pip"
-    schedule:
-      interval: "daily"
-
-    - package-ecosystem: "pip"
-    directory: "/shortcuts"
-    schedule:
-      interval: "daily"
