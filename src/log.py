@@ -1,4 +1,4 @@
-from BBCHeadlines import news
+from bbc_feeds import *
 from rockset import Client, Q, F
 from os import environ
 from datetime import date, datetime
@@ -17,7 +17,7 @@ def update_collection(date, content):
 
 def add_docs():
     ls = []
-    for i in news():
+    for i in news().world():
         ls.append(
             {
                 'title': i['title'],
