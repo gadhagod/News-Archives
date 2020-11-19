@@ -1,4 +1,5 @@
 import setuptools
+from pip.req import parse_requirements
 
 setuptools.setup(
     name='newsarchives',
@@ -17,8 +18,6 @@ setuptools.setup(
         'Operating System :: OS Independent',
     ],
     scripts=['./bin/news'],
-    install_requires=[
-        'click',
-    ],
+    install_requires=str(i.req) for i in parse_requirements('requirements.txt'),
     python_requires='>=3.6'
 )
