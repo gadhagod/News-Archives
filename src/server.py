@@ -29,10 +29,6 @@ def main():
         limit_count = int(args['limit']) # if a limit is specified, set the limit
     except:
         limit_count = 1000000 # else, limit is million
-    try:
-        order = args['order'] # if an order is given, get it
-    except:
-        order = 'recent' # else, set the order to 'recent'
 
     args['limit'] = limit_count # set limit to variable
     num_of_time_recieved = 0 # number of time args set to 0
