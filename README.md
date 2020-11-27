@@ -42,5 +42,8 @@ Get five most recent mentions of keyword "China":
 
     curl https://newsarchives.herokuapp.com/api/v1-alpha?keyword=china&limit=5
 
+## Demo App
+View a demo app at this [site](https://newsarchives.herokuapp.com). It's source code is in [src/demo.py](src/demo.py).
+
 ## Progress Updates
 Subscribe to this [issue thread](https://github.com/gadhagod/News-Archives/issues/2) to get progress updates.

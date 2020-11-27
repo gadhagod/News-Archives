@@ -1,0 +1,33 @@
+<head>
+    <link rel= "stylesheet" type= "text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='index.js') }}" type="text/javascript"></script>
+</head>
+<body>
+    <h1>
+        News Archives Lookup
+    </h1>
+    <h2>
+        Lookup news from any day since October 29th, 2020
+    </h2>
+    <br>
+    <br>
+    {%for i in news%} 
+        <strong>
+            <a href="{{ i['link'] }}">
+                {{ i['title'] }}
+            </a>
+        </strong>
+        <p>
+            {{ i['description'] }}
+        </p>
+        {% if i['date']%}
+            <p>{{ i['date'] }}</p>
+        {% endif %}
+        <hr>
+        {%endfor%}
+    <center>
+        <button onclick="location.href='/';">
+            Return Home
+        </button>
+    </center>
+</body>

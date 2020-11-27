@@ -1,6 +1,7 @@
 from flask import Flask, request
 from rockset import Client, ParamDict, Q, F
 import os
+import demo
 
 # Retrive collection
 rs = Client(api_key=os.environ.get('ROCKSET_SECRET'), api_server='api.rs2.usw2.rockset.com')
@@ -97,6 +98,18 @@ def main():
         return({'data': refine(res), 'parameters': args, 'status': 200})
     
     return({'message': 'ready', 'parameters': args, 'status': 200})
+
+@app.route('/', methods=['GET'])
+def homepage():
+    return(demo.index())
+
+@app.route('/day/<target>', methods=['GET'])
+def server_day_search(target):
+    return(demo.day_search(target))
+
+@app.route('/keyword/<target>', methods=['GET'])
+def server_keyword_search(target):
+    return(demo.keyword_search(target))
 
 @app.errorhandler(500)
 def server_error(err):

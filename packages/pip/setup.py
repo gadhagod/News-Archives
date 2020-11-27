@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
     name='newsarchives',
-    version='0.1',
+    version='0.1.1',
     author='Aarav Borthakur',
     author_email='gadhaguy13@gmail.com',
     description='The official python wrapper for the News Archives API',
@@ -15,5 +15,8 @@ setuptools.setup(
         'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
     ],
-    python_requires='>=3.6'
+    python_requires='>=3.6',
+    install_requires=[
+        'requests',
+    ]
 )
