@@ -2,4 +2,4 @@ flask==1.1.2
 rockset==0.7.18b20200724
 bbc-feeds==1.0
 gunicorn==20.0.4
-newsarchvies==0.1.1
+newsarchives==0.1.1
