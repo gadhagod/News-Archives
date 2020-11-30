@@ -24,6 +24,7 @@ def refine(input):
     return(input_list)
 
 @app.route('/api/v1-alpha', methods=['GET'])
+@app.route('/api/v1', methods=['GET'])
 def main():
     args = request.args.to_dict() # get url arguments
     try:
