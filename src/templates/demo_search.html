@@ -1,6 +1,9 @@
 <head>
-    <link rel= "stylesheet" type= "text/css" href="{{ url_for('static', filename='styles.css') }}">
-    <script src="{{ url_for('static', filename='index.js') }}" type="text/javascript"></script>
+    <meta charset="UTF-8">
+    <title>News Archives Lookup | {{ keyword }}</title>
+    <link rel="icon" href="{{ url_for('static', filename='icon.png') }}">
+    <link rel= "stylesheet" type= "text/css" href="{{ url_for('static', filename='demo.css') }}">
+    <script src="{{ url_for('static', filename='demo.js') }}" type="text/javascript"></script>
 </head>
 <body>
     <h1>
@@ -26,7 +29,7 @@
         <hr>
         {%endfor%}
     <center>
-        <button onclick="location.href='/';">
+        <button onclick="location.href='/demo';">
             Return Home
         </button>
     </center>

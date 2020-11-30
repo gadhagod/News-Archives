@@ -1,6 +1,8 @@
-from flask import Flask, request
-from rockset import Client, ParamDict, Q, F
 import os
+from requests import get
+from flask import Flask, request, render_template
+from flaskext.markdown import Markdown
+from rockset import Client, ParamDict, Q, F
 import demo
 
 # Retrive collection
@@ -12,6 +14,7 @@ keyword_search = rs.QueryLambda.retrieve('NewsKeywordSearch', version='42add4ea3
 time_keyword_search = rs.QueryLambda.retrieve('NewsTimeKeywordSearch', version='1b860b6f602f8e09', workspace='commons')
 
 app = Flask(__name__)
+Markdown(app)
 
 def refine(input):
     input_list = list(input)
@@ -101,14 +104,18 @@ def main():
     return({'message': 'ready', 'parameters': args, 'status': 200})
 
 @app.route('/', methods=['GET'])
+def docs():
+    return(render_template('index.html', README=open('README.md').read()).replace('&amp;', '&')) #get('https://raw.githubusercontent.com/gadhagod/News-Archives/master/README.md').text))
+
+@app.route('/demo', methods=['GET'])
 def homepage():
     return(demo.index())
 
-@app.route('/day/<target>', methods=['GET'])
+@app.route('/demo/day/<target>', methods=['GET'])
 def server_day_search(target):
     return(demo.day_search(target))
 
-@app.route('/keyword/<target>', methods=['GET'])
+@app.route('/demo/keyword/<target>', methods=['GET'])
 def server_keyword_search(target):
     return(demo.keyword_search(target))
 

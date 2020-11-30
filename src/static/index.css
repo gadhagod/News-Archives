@@ -1,0 +1,26 @@
+body {
+    background-color: lightgoldenrodyellow;
+}
+h1 {
+    color:navy;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: underline;
+}
+h2 {
+    text-decoration: underline;
+    color:navy;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h3 {
+    color:navy;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+p {
+    color:navy;
+    font-family: Verdana;
+}
+strong {
+    color: navy;
+    font-family: Verdana;
+}

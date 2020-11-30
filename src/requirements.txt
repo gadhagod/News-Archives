@@ -1,5 +1,6 @@
+gunicorn==20.0.4
 flask==1.1.2
+Flask-Markdown==0.3
 rockset==0.7.18b20200724
 bbc-feeds==1.0
-gunicorn==20.0.4
 newsarchives==0.1.1

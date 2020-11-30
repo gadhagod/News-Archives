@@ -1,32 +1,11 @@
 <head>
-    <link rel= "stylesheet" type= "text/css" href="{{ url_for('static', filename='styles.css') }}">
-    <script src="{{ url_for('static', filename='index.js') }}"></script>
+    <meta charset="UTF-8">
+    <title>News Archives API</title>
+    <meta name="The #1 Historic News API" content="Description">
+    <link rel="icon" href="{{ url_for('static', filename='icon.png') }}">
+    <link rel= "stylesheet" type= "text/css" href="{{ url_for('static', filename='index.css') }}">
 </head>
-<body>
-    <h1>
-        News Archives Lookup
-    </h1>
-    <h2>
-        Lookup news from any day since October 29th, 2020
-    </h2>
-    <br>
-    <br>
-    <center>
-        <p>
-            Search by day
-        </p>
-        <form>
-            <input type="text" id="day" placeholder="Day (example: '2020-11-02')">
-            <button onclick="search_day()">
-                Search
-            </button>
-        </form>
-        <p>Search by keyword</p>
-        <form>
-            <input type="text" id="keyword" placeholder="Keyword (example: 'china')">
-            <button onclick="search_keyword()">
-                Search
-            </button>
-        </form>
-    </center>
-</body>
+
+{% filter markdown %} 
+{{ README }}
+{% endfilter %}

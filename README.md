@@ -1,49 +1,48 @@
 # Welcome to News Archives REST API
 
-The #1 historic news API.
-
-## Server
-
-#### URL format
-**Base URL**:
-
-    https://newsarchives.herokuapp.com
-
-**Endpoints**:
-
-- `/api/v1-alpha`
+**The #1 Historic News API.** In five years, you will be able to see today's news. You can see news from any day, month, year, or containing a keyword. With quick responses and with simply organized JSON responses, even beginners can get started. No authorization is required for this API.
 
 ## Requests
 
-**Arguments**: <br>
-1. `day`: Get data on a day <br>
-2. `month`: Get data on a month<br>
-3. `year`: Get data on a year<br>
-4. `keyword`: Get data with a keyword. You can specify a time frame using arguements day, month, and year. Optional arguments for keyword:<br>
-    - `day`: Get articles with a keyword on a specific day.<br>
-    - `month`: Get articles with a keyword on a specific month.<br>
-    - `year`: Get articles with a keyword in a specific year.<br>
-    - `limit`: Limit the number of responses, returns most recent data.
+**URL**:
+[https://newsarchives.herokuapp.com/api/v1](https://newsarchives.herokuapp.com/api/v1)
+
+**Arguments**: 
+
+* `day`: Get data on a day
+* `month`: Get data on a month
+* `year`: Get data on a year
+* `keyword`: Get data with a keyword. You can specify a time frame using arguements day, month, and year. Optional arguments for keyword:
+    * `day`: Get articles with a keyword on a specific day.
+    * `month`: Get articles with a keyword on a specific month.
+    * `year`: Get articles with a keyword in a specific year.
+    * `limit`: Limit the number of responses, returns most recent data.
 
 ## Examples
 Get all data from 2020-11-02:
 
-    curl https://newsarchives.herokuapp.com/api/v1-alpha?day=2020-11-02
+    curl https://newsarchives.herokuapp.com/api/v1?day=2020-11-02
 
 Get all data from 2020-11:
 
-    curl https://newsarchives.herokuapp.com/api/v1-alpha?month=2020-11
+    curl https://newsarchives.herokuapp.com/api/v1?month=2020-11
 
 Get all data with keyword "Trump" from 2020:
 
-    curl https://newsarchives.herokuapp.com/api/v1-alpha?keyword=trump&year=2020
+    curl https://newsarchives.herokuapp.com/api/v1?keyword=trump&year=2020
 
 Get five most recent mentions of keyword "China":
 
-    curl https://newsarchives.herokuapp.com/api/v1-alpha?keyword=china&limit=5
+    curl https://newsarchives.herokuapp.com/api/v1?keyword=china&limit=5
 
 ## Demo App
-View a demo app at this [site](https://newsarchives.herokuapp.com). It's source code is in [src/demo.py](src/demo.py).
+
+View a demo app at this [site](https://newsarchives.herokuapp.com/demo). It's source code is in this [GitHub Repository](https://github.com/gadhagod/News-Archives).
 
 ## Progress Updates
+
 Subscribe to this [issue thread](https://github.com/gadhagod/News-Archives/issues/2) to get progress updates.
+
+## Source
+
+The code is licensed under the [MIT License](https://github.com/gadhagod/News-Archives/blob/master/LICENSE). It's open source, so you can find the source code [here](https://github.com/gadhagod/News-Archives). Pull requests and suggestions are encouraged.
