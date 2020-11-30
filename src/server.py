@@ -105,7 +105,7 @@ def main():
 
 @app.route('/', methods=['GET'])
 def docs():
-    return(render_template('index.html', README=get('https://raw.githubusercontent.com/gadhagod/News-Archives/master/README.md').text.replace('&amp;', '&')))
+    return(render_template('index.jinja', README=get('https://raw.githubusercontent.com/gadhagod/News-Archives/master/README.md').text.replace('&amp;', '&')))
 
 @app.route('/demo', methods=['GET'])
 def homepage():
