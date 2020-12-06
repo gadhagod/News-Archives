@@ -24,3 +24,7 @@ strong {
     color: navy;
     font-family: Verdana;
 }
+img {
+    display: block;
+    margin: 0 auto;
+}
