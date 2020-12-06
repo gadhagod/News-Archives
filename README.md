@@ -1,9 +1,10 @@
 # Welcome to News Archives REST API
 
+![](https://heroku-status-badges.herokuapp.com/newsarchives)
+
 **The #1 Historic News API.** In five years, you will be able to see today's news. You can see news from any day, month, year, or containing a keyword. With quick responses and with simply organized JSON responses, even beginners can get started. No authorization is required for this API.
 
 ## Requests
-
 **URL**:
 [https://newsarchives.herokuapp.com/api/v1](https://newsarchives.herokuapp.com/api/v1)
 
@@ -41,7 +42,7 @@ View a demo app at this [site](https://newsarchives.herokuapp.com/demo). It's so
 
 ## Progress Updates
 
-Subscribe to this [issue thread](https://github.com/gadhagod/News-Archives/issues/2) to get progress updates.
+Check out this [project](https://github.com/gadhagod/News-Archives/projects/1) to see progress updates.
 
 ## Source
 
