@@ -1,6 +1,8 @@
 # Welcome to News Archives REST API
 
 ![](https://heroku-status-badges.herokuapp.com/newsarchives)
+![](https://img.shields.io/pypi/v/newsarchives?color=blue)
+![](https://img.shields.io/gem/v/newsarchives?color=darkred)
 
 **The #1 Historic News API.** In five years, you will be able to see today's news. You can see news from any day, month, year, or containing a keyword. With quick responses and with simply organized JSON responses, even beginners can get started. No authorization is required for this API.
 
@@ -35,6 +37,9 @@ Get all data with keyword "Trump" from 2020:
 Get five most recent mentions of keyword "China":
 
     curl https://newsarchives.herokuapp.com/api/v1?keyword=china&limit=5
+
+## Client Libraries
+Client libraries are available for python and ruby. More are coming soon.
 
 ## Demo App
 
