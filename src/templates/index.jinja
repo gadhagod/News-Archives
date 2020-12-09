@@ -9,3 +9,11 @@
 {% filter markdown %} 
 {{ README }}
 {% endfilter %}
+
+<h2>Languages</h2>
+<p>News Archives is written in the following languages:</p>
+<p>
+    {% for i in languages %}
+        <a href="https://github.com/gadhagod/News-Archives/search?l={{ i }}">{{ i }}</a>: {{ languages[i] }}<br>
+    {% endfor %}
+</p>
