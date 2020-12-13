@@ -14,6 +14,11 @@
 <p>News Archives is written in the following languages:</p>
 <ul>
     {% for i in languages %}
-        <li><p><a href="https://github.com/gadhagod/News-Archives/search?l={{ i }}">{{ i }}</a>: {{ languages[i] }}</p></li>
+        <li>
+            <p>
+                <a href="https://github.com/gadhagod/News-Archives/search?l={{ i }}">
+                    {{ i }}</a>: {{ languages[i] }}
+            </p>
+        </li>
     {% endfor %}
 </ul>

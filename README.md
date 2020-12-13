@@ -8,9 +8,9 @@
 
 ## Requests
 **URL**:
-[https://newsarchives.herokuapp.com/api/v1](https://newsarchives.herokuapp.com/api/v1)
+[https://newsarchives.herokuapp.com/api/v2](https://newsarchives.herokuapp.com/api/v2)
 
-**Arguments**: 
+**Endpoints**: 
 
 * `day`: Get data on a day
 * `month`: Get data on a month
@@ -24,19 +24,19 @@
 ## Examples
 Get all data from 2020-11-02:
 
-    curl https://newsarchives.herokuapp.com/api/v1?day=2020-11-02
+    curl https://newsarchives.herokuapp.com/api/v2/day/2020-11-02
 
-Get all data from 2020-11:
+Get all data from month 2020-11:
 
-    curl https://newsarchives.herokuapp.com/api/v1?month=2020-11
+    curl https://newsarchives.herokuapp.com/api/v2/month/2020-11
 
 Get all data with keyword "Trump" from 2020:
 
-    curl https://newsarchives.herokuapp.com/api/v1?keyword=trump&year=2020
+    curl https://newsarchives.herokuapp.com/api/v2/keyword/trump?year=2020
 
 Get five most recent mentions of keyword "China":
 
-    curl https://newsarchives.herokuapp.com/api/v1?keyword=china&limit=5
+    curl https://newsarchives.herokuapp.com/api/v2/keyword/china?limit=5
 
 ## Client Libraries
 Client libraries are available for python and ruby. More are coming soon.
@@ -47,7 +47,7 @@ View a demo app at this [site](https://newsarchives.herokuapp.com/demo). It's so
 
 ## Progress Updates
 
-Check out this [project](https://github.com/gadhagod/News-Archives/projects/1) to see progress updates.
+Check out this [project](https://github.com/gadhagod/News-Archives/projects/1) for progress updates.
 
 ## Source
 
