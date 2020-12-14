@@ -8,7 +8,7 @@
 **The #1 Historic News API.** In five years, you will be able to see today's news. You can see news from any day, month, year, or containing a keyword. With quick responses and with simply organized JSON responses, even beginners can get started. No authorization is required for this API.
 
 ## Requests
-**URL**:
+**Base URL**:
 [https://newsarchives.herokuapp.com/api/v2](https://newsarchives.herokuapp.com/api/v2)
 
 **Endpoints**: 
