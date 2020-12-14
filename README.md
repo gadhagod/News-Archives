@@ -53,3 +53,6 @@ Check out this [project](https://github.com/gadhagod/News-Archives/projects/1) f
 ## Source
 
 The code is licensed under the [MIT License](https://github.com/gadhagod/News-Archives/blob/master/LICENSE). It's open source, so you can find the source code [here](https://github.com/gadhagod/News-Archives). Pull requests and suggestions are encouraged.
+
+## Architecture
+[Here](https://gadhagod.medium.com/how-i-built-the-news-archives-api-dfcb3b12d4f6) is an article about how this project was built.
