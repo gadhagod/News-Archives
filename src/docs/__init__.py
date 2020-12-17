@@ -24,7 +24,7 @@ def home():
 
     return(render_template(
             'index.jinja', 
-            README=get('https://raw.githubusercontent.com/gadhagod/News-Archives/master/README.md').text.replace('&amp;', '&'),
+            README=get('https://raw.githubusercontent.com/gadhagod/News-Archives/master/README.md').text.replace('&amp;', '&').replace(' / ', ' ').replace(' - ', ' '),
             languages=languages
         )
     )
