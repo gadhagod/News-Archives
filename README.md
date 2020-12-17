@@ -1,11 +1,22 @@
 # Welcome to News Archives REST API
+The #1 Historic News API.
 
 ![](https://heroku-status-badges.herokuapp.com/newsarchives)
 ![](https://img.shields.io/github/last-commit/gadhagod/News-Archives?color=lightblue&label=last%20updated)
 ![](https://img.shields.io/pypi/v/newsarchives?color=blue)
 ![](https://img.shields.io/gem/v/newsarchives?color=darkred)
 
-**The #1 Historic News API.** In five years, you will be able to see today's news. You can see news from any day, month, year, or containing a keyword. With quick responses and with simply organized JSON responses, even beginners can get started. No authorization is required for this API.
+## Concept
+Starting October 29, 2020, trending news from BBC has been logged for the public, and will continue for years. So, in say, a decade, you will be able to see what was on the news today. \
+Why is this useful? 
+- Since just October 29, much has happened. Imagine all the historic events that will happen in the next few years.
+- You can get past daily "coverage" of happenings with huge impacts, like the presidential race.
+- Maybe you want to relive the events and people reactions to the road to the coronavirus vaccine.
+- Perhaps you just want to see what was on the news on your 10th birthday?
+
+
+**News Archives** has made this all possible! You can get news from a day, month, year, or with a keyword in milliseconds.
+
 
 ## Requests
 **Base URL**:
