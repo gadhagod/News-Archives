@@ -1,7 +1,7 @@
 # Welcome to News Archives REST API
 
 ![](https://heroku-status-badges.herokuapp.com/newsarchives)
-![](https://img.shields.io/github/last-commit/gadhagod/News-Archives?color=lightblue&label=last%20updated)
+![](https://img.shields.io/github/last-commit/gadhagod/News-Archives?color=lightblue&label=updated)
 ![](https://img.shields.io/pypi/v/newsarchives?color=blue)
 ![](https://img.shields.io/gem/v/newsarchives?color=darkred)
 
